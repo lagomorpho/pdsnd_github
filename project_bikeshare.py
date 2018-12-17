@@ -344,6 +344,8 @@ def generate_stats(city, month, day):
 def unit_test():
     """
     Runs through all potential choices for city, month, and day and generates stats
+    
+    Output for each choice can be stored in a text file. Useful for testing for edge cases and outlying data that may trigger errors.
     """
     for city in range(1, 4):
         for month in range(0, 7):
@@ -352,6 +354,9 @@ def unit_test():
 
 
 def debug():
+	"""
+	Debug function for testing functions and workflow
+	"""
     generate_stats(3,0,7)
 
 
