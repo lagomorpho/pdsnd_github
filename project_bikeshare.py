@@ -119,7 +119,8 @@ def time_stats(df):
                 break
 
             percent = 100*month_value_counts[month]//count
-            print("{0:12}: {1:2}".format(MONTHS[month].title(),'█'*percent))
+            
+            print("{0:12} |{1:2}".format(MONTHS[month].title(),'█'*percent))
 
     # generates day-based stats if day is not filtered
     day_value_counts = dict(df['Day of Week'].value_counts())
@@ -135,7 +136,7 @@ def time_stats(df):
                 break
 
             percent = 100*day_value_counts[day]//count
-            print("{0:12}: {1:2}".format(DAY_OF_WEEK[day].title(),'█'*percent))
+            print("{0:12} |{1:2}".format(DAY_OF_WEEK[day].title(),'█'*percent))
 
     # display the most common start hour
     df['Hour'] = df['Start Time'].dt.hour
@@ -147,7 +148,8 @@ def time_stats(df):
     hour_value_counts = dict(df['Hour'].value_counts())
     for hour in range(0, 24):
         percent = 100*hour_value_counts[hour]//count
-        print("{0:2}:00 {1:2}".format(hour,'█'*percent))
+        
+        print("{0:2}:00 |{1:2}".format(hour,'█'*percent))
 
     print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
