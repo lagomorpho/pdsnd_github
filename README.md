@@ -18,3 +18,5 @@ This project allows the user to explore data gathered from three bikeshare progr
 - [Python String Formatting Best Practices](https://realpython.com/python-string-formatting/)
 - [How do I make a fixed size formatted string in python?](https://stackoverflow.com/questions/10837017/how-do-i-make-a-fixed-size-formatted-string-in-python)
 - [Python string documentation](https://docs.python.org/3.7/library/string.html)
+- [Markdown Quick Reference Guide](https://en.support.wordpress.com/markdown-quick-reference/)
+- [MacDown](https://macdown.uranusjr.com/) - an open source Markdown editor
