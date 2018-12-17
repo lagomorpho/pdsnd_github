@@ -348,6 +348,10 @@ def unit_test():
     for city in range(1, 4):
         for month in range(0, 7):
             for day in range(0, 8):
+                print("Unit test values:")
+                print("City:  {:2}".format(city))
+                print("Month: {:2}".format(month))
+                print("Day:   {:2}".format(day))
                 generate_stats(city, month, day)
 
 
